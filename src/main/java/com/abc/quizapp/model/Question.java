@@ -21,6 +21,7 @@ public class Question {
 	private String optionA;
 	private String optionB;
 	private String optionC;
+	private String optionD;
 	private int ans;
 	private int chose;
 
@@ -28,7 +29,7 @@ public class Question {
 		super();
 	}
 
-	public Question(int quesId, String subject, String difficulty, String title, String optionA, String optionB, String optionC, int ans, int chose) {
+	public Question(int quesId, String subject, String difficulty, String title, String optionA, String optionB, String optionC, String optionD, int ans, int chose) {
 		super();
 		this.quesId = quesId;
 		this.subject = subject;
@@ -37,6 +38,7 @@ public class Question {
 		this.optionA = optionA;
 		this.optionB = optionB;
 		this.optionC = optionC;
+		this.optionD = optionD;
 		this.ans = ans;
 		this.chose = chose;
 	}
@@ -98,6 +100,14 @@ public class Question {
 		this.optionC = optionC;
 	}
 
+	public String getOptionD() {
+		return optionD;
+	}
+
+	public void setOptionD(String optionD) {
+		this.optionD = optionD;
+	}
+
 	public int getAns() {
 		return ans;
 	}
@@ -117,7 +127,7 @@ public class Question {
 	@Override
 	public String toString() {
 		return "Question [quesId=" + quesId + ", subject=" + subject + ", difficulty=" + difficulty +
-				", title=" + title + ", optionA=" + optionA + ", optionB=" + optionB + ", optionC=" + optionC + ", ans=" + ans + ", chose=" + chose + "]";
+				", title=" + title + ", optionA=" + optionA + ", optionB=" + optionB + ", optionC=" + optionC + ", optionD=" + optionD + ", ans=" + ans + ", chose=" + chose + "]";
 	}
 
 }
