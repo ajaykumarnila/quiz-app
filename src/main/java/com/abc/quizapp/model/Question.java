@@ -15,6 +15,8 @@ public class Question {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int quesId;
+	private String subject;
+	private String difficulty;
 	private String title;
 	private String optionA;
 	private String optionB;
@@ -26,9 +28,11 @@ public class Question {
 		super();
 	}
 
-	public Question(int quesId, String title, String optionA, String optionB, String optionC, int ans, int chose) {
+	public Question(int quesId, String subject, String difficulty, String title, String optionA, String optionB, String optionC, int ans, int chose) {
 		super();
 		this.quesId = quesId;
+		this.subject = subject;
+		this.difficulty = difficulty;
 		this.title = title;
 		this.optionA = optionA;
 		this.optionB = optionB;
@@ -43,6 +47,23 @@ public class Question {
 
 	public void setQuesId(int quesId) {
 		this.quesId = quesId;
+	}
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	public String getDifficulty() {
+		return difficulty;
+	}
+
+
+	public void setDifficulty(String difficulty) {
+		this.difficulty = difficulty;
 	}
 
 	public String getTitle() {
@@ -95,7 +116,8 @@ public class Question {
 
 	@Override
 	public String toString() {
-		return "Question [quesId=" + quesId + ", title=" + title + ", optionA=" + optionA + ", optionB=" + optionB + ", optionC=" + optionC + ", ans=" + ans + ", chose=" + chose + "]";
+		return "Question [quesId=" + quesId + ", subject=" + subject + ", difficulty=" + difficulty +
+				", title=" + title + ", optionA=" + optionA + ", optionB=" + optionB + ", optionC=" + optionC + ", ans=" + ans + ", chose=" + chose + "]";
 	}
 
 }

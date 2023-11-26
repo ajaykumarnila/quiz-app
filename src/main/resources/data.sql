@@ -1,6 +1,8 @@
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(ques_id, subject, difficulty, title, optionA, optionB, optionC, ans, chose)
 values(
-	1, 
+	1,
+	'Javascript',
+	'Easy',
 	'What is a correct syntax to output "Hello World" in Java?',  
 	'echo "Hello World"',
 	'printf("Hello World")',
@@ -9,10 +11,12 @@ values(
 	-1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(ques_id, subject, difficulty, title, optionA, optionB, optionC, ans, chose)
 values(
-	2, 
-	'Java is short for "JavaScript."',  
+	2,
+	'Javascript',
+	'Easy',
+	'Java is short for "JavaScript."',
 	'True',
 	'False',
 	'Partially True',
@@ -20,9 +24,11 @@ values(
 	-1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(ques_id, subject, difficulty, title, optionA, optionB, optionC, ans, chose)
 values(
-	3, 
+	3,
+	'Javascript',
+	'Easy',
 	'How do you insert COMMENTS in Java code?',  
 	'# This is a comment',
 	'// This is a comment',
@@ -31,9 +37,11 @@ values(
 	-1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(ques_id, subject, difficulty, title, optionA, optionB, optionC, ans, chose)
 values(
-	4, 
+	4,
+	'Javascript',
+	'Easy',
 	'Which data type is used to create a variable that should store text?',  
 	'String',
 	'Char',
@@ -42,9 +50,11 @@ values(
 	-1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(ques_id, subject, difficulty, title, optionA, optionB, optionC, ans, chose)
 values(
-	5, 
+	5,
+	'Javascript',
+	'Easy',
 	'How do you create a variable with the numeric value 5?',  
 	'num x = 5',
 	'float x = 5',
@@ -53,9 +63,11 @@ values(
 	-1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(ques_id, subject, difficulty, title, optionA, optionB, optionC, ans, chose)
 values(
-	6, 
+	6,
+	'Javascript',
+	'Easy',
 	'How do you create a variable with the floating number 2.8?',  
 	'num x = 2.8',
 	'float x = 2.8',
@@ -64,9 +76,11 @@ values(
 	-1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(ques_id, subject, difficulty, title, optionA, optionB, optionC, ans, chose)
 values(
-	7, 
+	7,
+	'Javascript',
+	'Easy',
 	'Which method can be used to find the length of a string?',  
 	'getSize()',
 	'length()',
@@ -75,9 +89,11 @@ values(
 	-1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(ques_id, subject, difficulty, title, optionA, optionB, optionC, ans, chose)
 values(
-	8, 
+	8,
+	'Javascript',
+	'Easy',
 	'Which operator is used to add together two values?',  
 	'&&',
 	'.add()',
@@ -86,9 +102,11 @@ values(
 	-1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(ques_id, subject, difficulty, title, optionA, optionB, optionC, ans, chose)
 values(
-	9, 
+	9,
+	'Javascript',
+	'Easy',
 	'The value of a string variable can be surrounded by single quotes.',  
 	'True',
 	'False',
@@ -97,9 +115,11 @@ values(
 	-1)
 ;
 
-insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+insert into questions(ques_id, subject, difficulty, title, optionA, optionB, optionC, ans, chose)
 values(
-	10, 
+	10,
+	'Javascript',
+	'Easy',
 	'Which operator can be used to compare two values?',  
 	'><',
 	'&|',

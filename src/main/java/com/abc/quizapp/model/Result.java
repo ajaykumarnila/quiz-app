@@ -17,16 +17,20 @@ public class Result {
 	private int id;
 	private String username;
 	private int totalCorrect = 0;
+	private String subject;
+	private String difficulty;
 
 	public Result() {
 		super();
 	}
 
-	public Result(int id, String username, int totalCorrect) {
+	public Result(int id, String username, int totalCorrect, String subject, String difficulty) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.totalCorrect = totalCorrect;
+		this.subject = subject;
+		this.difficulty = difficulty;
 	}
 
 	public int getId() {
@@ -53,4 +57,19 @@ public class Result {
 		this.totalCorrect = totalCorrect;
 	}
 
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	public String getDifficulty() {
+		return difficulty;
+	}
+
+	public void setDifficulty(String difficulty) {
+		this.difficulty = difficulty;
+	}
 }

@@ -42,6 +42,21 @@ public class QuizService {
 		
 		return qForm;
 	}
+
+	public QuestionForm getQuestionsBySubjectAndDifficulty(String subject, String difficulty) {
+		List<Question> allQues = qRepo.findBySubjectAndDifficulty(subject, difficulty);
+		List<Question> qList = new ArrayList<Question>();
+
+		Random random = new Random();
+
+		for(int i=0; i<5; i++) {
+			int rand = random.nextInt(allQues.size());
+			qList.add(allQues.get(rand));
+			allQues.remove(rand);
+		}
+		qForm.setQuestions(qList);
+		return qForm;
+	}
 	
 	public int getResult(QuestionForm qForm) {
 		int correct = 0;
